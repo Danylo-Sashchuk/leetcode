@@ -19,18 +19,20 @@ public class MergeSortedArray {
         int firstPointer = 0;
         int secondPointer = 0;
         int resPointer = 0;
-        while (firstPointer < m && secondPointer < n) {
+        while (firstPointer < m || secondPointer < n) {
+            if (firstPointer == m) {
+                res[resPointer++] = nums2[secondPointer++];
+                continue;
+            }
+            if (secondPointer == n) {
+                res[resPointer++] = nums1[firstPointer++];
+                continue;
+            }
             if (nums1[firstPointer] <= nums2[secondPointer]) {
                 res[resPointer++] = nums1[firstPointer++];
             } else {
                 res[resPointer++] = nums2[secondPointer++];
             }
-        }
-        while (firstPointer < m) {
-            res[resPointer++] = nums1[firstPointer++];
-        }
-        while (secondPointer < n) {
-            res[resPointer++] = nums2[secondPointer++];
         }
         return res;
     }
