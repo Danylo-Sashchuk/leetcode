@@ -1,6 +1,6 @@
 CheatList of used algorithms and data structures
 
-## HashMap & Stack
+## Stack
 
 1) [Valid Parentheses](https://github.com/Danylo-Sashchuk/leetcode/blob/d644e0491871f8b1782f2bf9ca9dcff345b8155d/src/ValidParentheses.java)
 
@@ -10,3 +10,6 @@ CheatList of used algorithms and data structures
 
 ## Arrays
 1) [Merge two sorted arrays](https://github.com/Danylo-Sashchuk/leetcode/blob/364d9f5ecb0acd9195ea2cc41eccc13e5343150f/src/arrays/MergeSortedArray.java)
+
+## HashSet
+1) [Contains Duplicate](https://leetcode.com/problems/contains-duplicate/description) - [solution](https://github.com/Danylo-Sashchuk/leetcode/blob/af65bc8cfe6f118533f3fe23e4718fcd1ca1d342/src/arrays/ContainsDuplicate.java)
