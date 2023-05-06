@@ -13,4 +13,4 @@ CheatList of used algorithms and data structures
 
 ## HashSet
 1) [Contains Duplicate](https://leetcode.com/problems/contains-duplicate/description) - [{?}](https://github.com/Danylo-Sashchuk/leetcode/blob/af65bc8cfe6f118533f3fe23e4718fcd1ca1d342/src/arrays/ContainsDuplicate.java)
-2) [Valid anagram](https://leetcode.com/problems/valid-anagram/submissions/945234877/) - [{?}]()
+2) [Valid anagram](https://leetcode.com/problems/valid-anagram/submissions/945234877/) - [{?}](https://github.com/Danylo-Sashchuk/leetcode/blob/044578f20a2eb7b770e3d71dd38d90f7b9af170f/src/hashmap/ValidAnagram.java)
