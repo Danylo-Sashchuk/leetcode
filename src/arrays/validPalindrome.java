@@ -2,21 +2,20 @@ package arrays;
 
 public class validPalindrome {
     public static void main(String[] args) {
-        System.out.println(isPalindrome("0P"));
+        System.out.println(isPalindrome("a.,.,.,.',a"));
     }
 
     public static boolean isPalindrome(String s) {
         char[] array = s.toCharArray();
-        StringBuilder res = new StringBuilder();
-        for (char c : array) {
-            if (Character.isLetter(c) || Character.isDigit(c)) {
-                res.append(Character.toLowerCase(c));
-            }
-        }
-        for (int i = 0, j = res.length() - 1; i < res.length(); i++, j--) {
-            if (res.charAt(i) != res.charAt(j)) {
-                return false;
-            }
+        int first = 0;
+        int last = array.length - 1;
+        while (first < last) {
+            while (!Character.isLetterOrDigit(array[first]) && first<array.length - 1) first++;
+            while (!Character.isLetterOrDigit(array[last]) && last>0) last--;
+            if (first > last) return true;
+            if (Character.toLowerCase(array[first]) != Character.toLowerCase(array[last])) return false;
+            first++;
+            last--;
         }
         return true;
     }
