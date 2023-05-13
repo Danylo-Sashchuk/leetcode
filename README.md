@@ -1,9 +1,15 @@
 CheatList of used algorithms and data structures
 
+## Two Pointers/Sliding window
+1) [Product of array except himself](https://leetcode.com/problems/product-of-array-except-self/) - [{?}](https://github.com/Danylo-Sashchuk/leetcode/blob/b4ff7a44fd63d3e622dbb93abd1f6687bccafcfe/src/arrays/ProductOfArrayExceptSelf.java) Create two arrays of prefix and postfix products then multiply neighbors
+2) [Longest consecutive sequence](https://leetcode.com/problems/longest-consecutive-sequence/description/) - [{?}](https://github.com/Danylo-Sashchuk/leetcode/blob/e48d0a89d38ceb9ba5ccb743205f718c3a702a80/src/arrays/LongestConsecutiveSequence.java) Take an element and find bigger, then smaller, simultaneously increment counter and delete elements that were counted
+3) [Valid Palindrome](https://leetcode.com/problems/valid-palindrome/) - [{?}](https://github.com/Danylo-Sashchuk/leetcode/blob/81e67da0d9b96795f6f125fe25ef41e511b7a727/src/arrays/validPalindrome.java) first++ & last-- until correct element found then compare head and tail
+4) [Two sum II - input array is sorted](https://leetcode.com/problems/two-sum-ii-input-array-is-sorted/) - [{?}](https://github.com/Danylo-Sashchuk/leetcode/blob/c479d8fda0bffd240a950b6b0a197fd39b88359a/src/arrays/TwoSumInputArrayIsSorted.java) sum head and tail. If it is more than target - decrease head; if less - increase head until you find 
+5) [3Sum](https://leetcode.com/problems/3sum/) - [{?}](https://github.com/Danylo-Sashchuk/leetcode/blob/5b6d12e3837dd5869e072ca48f945aea36413150/src/arrays/SumOfThree.java) first pointer untouchable, move only second and third. if [first]+[second]+[third] < target - increase second; if sum > target - decrease third pointer. If second = third, increase first pointer. 
+6) [Longest palindromic substring](https://leetcode.com/problems/longest-palindromic-substring/) - [{?}](https://github.com/Danylo-Sashchuk/leetcode/blob/177fb49396ce853e9e1162cca64c4d37a8dcac46/src/arrays/LongestSubstringWithoutRepeatingCharacters.java) move the window until found element in set - move left pointer
 ## Stack
-
 1) [Valid parentheses](https://leetcode.com/problems/valid-parentheses/) - [{?}](https://github.com/Danylo-Sashchuk/leetcode/blob/d644e0491871f8b1782f2bf9ca9dcff345b8155d/src/ValidParentheses.java)
-. Push opening, pop when ecounter closing & compare.
+. Push opening, pop when encounter closing & compare.
 
 ## Linked List
 1) [Merge two sorted linked lists](https://leetcode.com/problems/merge-two-sorted-lists/) - [{?}](https://github.com/Danylo-Sashchuk/leetcode/blob/43f02e3862063e3fcb0b34203e0de02fc14cb2ec/src/linkedlist/ListNode.java)
