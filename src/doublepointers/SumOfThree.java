@@ -1,4 +1,4 @@
-package arrays;
+package doublepointers;
 
 import java.util.*;
 

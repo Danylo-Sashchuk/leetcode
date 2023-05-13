@@ -1,4 +1,4 @@
-package arrays;
+package doublepointers;
 
 public class validPalindrome {
     public static void main(String[] args) {
