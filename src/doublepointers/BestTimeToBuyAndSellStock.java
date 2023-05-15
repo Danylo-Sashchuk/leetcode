@@ -9,6 +9,7 @@ public class BestTimeToBuyAndSellStock {
 
     public static int maxProfit(int[] prices) {
         int smallerPrice = 100000;
+        double a = Math.pow(2, 31);
         int profit = 0;
         int today = 0;
         for (int price : prices) {
