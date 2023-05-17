@@ -23,7 +23,8 @@ First string do <Character, numberOfMeetings>, then subtract chars from second s
 Compare residue with keys.
 3) [Group anagrams](https://leetcode.com/problems/group-anagrams/submissions/945263799/) - [{?}](https://github.com/Danylo-Sashchuk/leetcode/blob/24768a098f6ff46c53ad6c90b6e9dabb14db8511/src/hashset/GroupAnagrams.java)
 Create a key from characters array and put same ones there.
-4) [Top K frequent elements](https://leetcode.com/problems/top-k-frequent-elements/description/) - [{?}](https://github.com/Danylo-Sashchuk/leetcode/blob/ec9d3011b70efb103b3a6591aa62ef17c393b268/src/arrays/TopKFrequentElements.java) Create frequency table, reverse it through an array of the max length, do reverse traversal.
+4) [Top K frequent elements](https://leetcode.com/problems/top-k-frequent-elements/description/) - [{?}](https://github.com/Danylo-Sashchuk/leetcode/blob/ec9d3011b70efb103b3a6591aa62ef17c393b268/src/arrays/TopKFrequentElements.java) Create frequency table, reverse it through an array of the max length, do reverse traversal
+5) [Sort Characters By Frequency](https://leetcode.com/problems/sort-characters-by-frequency/) - [{?}](https://github.com/Danylo-Sashchuk/leetcode/blob/8ac234804efb360fe97b4ec6496c971c92c68178/src/SortCharactersByFrequency.java) Create frequency table, add Map.Entry to the priorityQueue
 ## Arrays
 1) [Merge two sorted arrays](https://leetcode.com/problems/merge-sorted-array/) - [{?}](https://github.com/Danylo-Sashchuk/leetcode/blob/364d9f5ecb0acd9195ea2cc41eccc13e5343150f/src/arrays/MergeSortedArray.java)
 Make a pointer for each array and traverse through them
