@@ -1,4 +1,4 @@
-package doublepointers;
+package arrays;
 
 import java.util.Comparator;
 import java.util.PriorityQueue;
