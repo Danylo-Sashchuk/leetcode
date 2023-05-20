@@ -1,3 +1,5 @@
 .idea/
 out/
 LeetCode.iml
+src/arrays/ValidSudoku.java
+src/arrays/DiagonalTraverse.java
