@@ -1,6 +1,6 @@
 package arrays;
 
-public class FindtheIndexOfTheFirstOccurrenceInAString {
+public class FindTheIndexOfTheFirstOccurrenceInAString {
     public static void main(String[] args) {
         String s1 = "mississippi";
         String s2 = "issi";
