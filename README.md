@@ -10,6 +10,7 @@ CheatList of used algorithms and data structures
 ## Stack
 1) [Valid parentheses](https://leetcode.com/problems/valid-parentheses/) - [{?}](https://github.com/Danylo-Sashchuk/leetcode/blob/d644e0491871f8b1782f2bf9ca9dcff345b8155d/src/ValidParentheses.java)
 . Push opening, pop when encounter closing & compare.
+2) [Largest Number At Least Twice of Others](https://leetcode.com/problems/largest-number-at-least-twice-of-others/) - [{?}](https://github.com/Danylo-Sashchuk/leetcode/blob/2446d4195dc339b68bf8c4a0de136ffe6349466f/src/arrays/LargestNumberAtLeastTwiceofOthers.java) Create a Priority Queue with custom comparator. If there are more then 3 elements - poll().  
 
 ## Linked List
 1) [Merge two sorted linked lists](https://leetcode.com/problems/merge-two-sorted-lists/) - [{?}](https://github.com/Danylo-Sashchuk/leetcode/blob/43f02e3862063e3fcb0b34203e0de02fc14cb2ec/src/linkedlist/ListNode.java)
