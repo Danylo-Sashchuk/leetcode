@@ -7,7 +7,7 @@ public class MissingNumber {
         System.out.println(missingNumber(new int[]{0, 1}));
     }
 
-    static public int missingNumber(int[] nums) {
+    static public int missingNumber1(int[] nums) {
         boolean[] checked = new boolean[nums.length + 1];
         for (int i = 0; i < nums.length; i++) {
             checked[nums[i]] = true;
@@ -20,7 +20,7 @@ public class MissingNumber {
         return -1;
     }
 
-    static public int missingNumber1(int[] nums) {
+    static public int missingNumber(int[] nums) {
         int sum = 0;
         for (int i = 0; i < nums.length; i++) {
             sum += i;
