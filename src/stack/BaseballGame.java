@@ -2,7 +2,6 @@ package stack;
 
 import java.util.ArrayDeque;
 import java.util.Deque;
-import java.util.Stack;
 
 public class BaseballGame {
     public static void main(String[] args) {
@@ -11,6 +10,7 @@ public class BaseballGame {
         System.out.println(calPoints(new String[]{"1", "C"}));
 
     }
+
     static public int calPoints(String[] operations) {
         Deque<Integer> record = new ArrayDeque<>();
         int sum = 0;
@@ -37,27 +37,27 @@ public class BaseballGame {
         return sum;
     }
 
-//    static public int calPoints(String[] operations) {
-//        Stack<String> record = new Stack<>();
-//        for (int i = 0; i < operations.length; i++) {
-//            switch (operations[i]) {
-//                case "+" -> {
-//                    int a = Integer.parseInt(record.pop());
-//                    int b = Integer.parseInt(record.pop());
-//                    int c = a + b;
-//                    record.push(String.valueOf(b));
-//                    record.push(String.valueOf(a));
-//                    record.push(String.valueOf(c));
-//                }
-//                case "D" -> {
-//                    int a = Integer.parseInt(record.peek());
-//                    int b = a * 2;
-//                    record.push(String.valueOf(b));
-//                }
-//                case "C" -> record.pop();
-//                default -> record.push(operations[i]);
-//            }
-//        }
-//        return record.stream().map(Integer::parseInt).reduce(0, Integer::sum);
-//    }
+    //    static public int calPoints(String[] operations) {
+    //        Stack<String> record = new Stack<>();
+    //        for (int i = 0; i < operations.length; i++) {
+    //            switch (operations[i]) {
+    //                case "+" -> {
+    //                    int a = Integer.parseInt(record.pop());
+    //                    int b = Integer.parseInt(record.pop());
+    //                    int c = a + b;
+    //                    record.push(String.valueOf(b));
+    //                    record.push(String.valueOf(a));
+    //                    record.push(String.valueOf(c));
+    //                }
+    //                case "D" -> {
+    //                    int a = Integer.parseInt(record.peek());
+    //                    int b = a * 2;
+    //                    record.push(String.valueOf(b));
+    //                }
+    //                case "C" -> record.pop();
+    //                default -> record.push(operations[i]);
+    //            }
+    //        }
+    //        return record.stream().map(Integer::parseInt).reduce(0, Integer::sum);
+    //    }
 }

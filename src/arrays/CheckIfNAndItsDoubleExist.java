@@ -1,6 +1,8 @@
 package arrays;
 
-import java.util.*;
+import java.util.Arrays;
+import java.util.HashMap;
+import java.util.Map;
 
 public class CheckIfNAndItsDoubleExist {
     public static void main(String[] args) {
@@ -18,16 +20,16 @@ public class CheckIfNAndItsDoubleExist {
                 -200, 64, 619, -952, 178, 191, -768, -925, 175, 84, -971, -794, 847, -320, -311, 910, -246, 536, 128,
                 -930, 305, -242, 193, -849, -7, 835, 299, -829, 734, 105, -87, -315, 24, 882, 659, 114, -994, 889,
                 -671, 863, -335, -261, -562, -701, 835, 188, -697, 207, -780, -173, -351, 775, 41};
-//        int[] res = new int[arr.length];
-//        res = Arrays.copyOf(arr, arr.length);
-//        res = Arrays.stream(res).map(n -> n / 2).toArray();
+        //        int[] res = new int[arr.length];
+        //        res = Arrays.copyOf(arr, arr.length);
+        //        res = Arrays.stream(res).map(n -> n / 2).toArray();
         Arrays.sort(arr);
-//        Arrays.sort(res);
-//        Set<Integer> first = new HashSet<>();
-//        Set<Integer> second = new HashSet<>();
-//        Arrays.stream(arr).forEach(first::add);
-//        Arrays.stream(res).forEach(second::add);
-//        first.retainAll(second);
+        //        Arrays.sort(res);
+        //        Set<Integer> first = new HashSet<>();
+        //        Set<Integer> second = new HashSet<>();
+        //        Arrays.stream(arr).forEach(first::add);
+        //        Arrays.stream(res).forEach(second::add);
+        //        first.retainAll(second);
         System.out.println(checkIfExist(arr));
     }
 
@@ -39,10 +41,13 @@ public class CheckIfNAndItsDoubleExist {
         for (int i = 0; i < arr.length; i++) {
             double temp = (double) arr[i] / (double) 2;
             int t = arr[i] / 2;
-            if (temp != t) continue;
-            if (t == 0 && map.get(0) == 1) return false;
+            if (temp != t)
+                continue;
+            if (t == 0 && map.get(0) == 1)
+                return false;
             int count = map.getOrDefault(t, 0);
-            if (count > 0) return true;
+            if (count > 0)
+                return true;
         }
         return false;
     }

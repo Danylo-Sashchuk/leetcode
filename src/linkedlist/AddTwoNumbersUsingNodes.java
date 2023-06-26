@@ -11,7 +11,8 @@ public class AddTwoNumbersUsingNodes {
         }
         System.out.println();
         first = new ListNode(9, new ListNode(9, new ListNode(9, new ListNode(9))));
-        second = new ListNode(9, new ListNode(9, new ListNode(9, new ListNode(9, new ListNode(9, new ListNode(9, new ListNode(9)))))));
+        second = new ListNode(9, new ListNode(9, new ListNode(9, new ListNode(9, new ListNode(9, new ListNode(9,
+                new ListNode(9)))))));
         res = addTwoNumbers(first, second);
         while (res != null) {
             System.out.print(res.val + " ");
