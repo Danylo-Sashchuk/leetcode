@@ -28,11 +28,14 @@ public class DuplicateZeros {
         int oldPlace = arr.length - 1;
         while (oldPlace < newPlace) {
             if (arr[oldPlace] != 0) {
-                if (newPlace < arr.length) arr[newPlace] = arr[oldPlace];
+                if (newPlace < arr.length)
+                    arr[newPlace] = arr[oldPlace];
             } else {
-                if (newPlace < arr.length) arr[newPlace] = arr[oldPlace];
+                if (newPlace < arr.length)
+                    arr[newPlace] = arr[oldPlace];
                 newPlace--;
-                if (newPlace < arr.length) arr[newPlace] = arr[oldPlace];
+                if (newPlace < arr.length)
+                    arr[newPlace] = arr[oldPlace];
             }
             oldPlace--;
             newPlace--;

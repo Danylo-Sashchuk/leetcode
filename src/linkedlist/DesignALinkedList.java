@@ -8,13 +8,13 @@ public class DesignALinkedList {
     }
 
     public static void main(String[] args) {
-//        test1();
-//        test2();
-//        test3();
-//        test4();
-//        test8();
-//        test10();
-//        test20();
+        //        test1();
+        //        test2();
+        //        test3();
+        //        test4();
+        //        test8();
+        //        test10();
+        //        test20();
         test62();
     }
 
@@ -111,7 +111,8 @@ public class DesignALinkedList {
     }
 
     public int get(int index) {
-        if (index >= size) return -1;
+        if (index >= size)
+            return -1;
         Link t = head;
         for (int i = 0; i < index; i++) {
             t = t.next;
@@ -138,7 +139,8 @@ public class DesignALinkedList {
     }
 
     public void addAtIndex(int index, int val) {
-        if (index > size) return;
+        if (index > size)
+            return;
         if (index == size) {
             addAtTail(val);
             return;
@@ -157,7 +159,8 @@ public class DesignALinkedList {
     }
 
     public void deleteAtIndex(int index) {
-        if (index >= size) return;
+        if (index >= size)
+            return;
         if (index == 0) {
             head = head.next;
             size--;

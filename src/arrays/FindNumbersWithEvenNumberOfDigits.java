@@ -14,7 +14,8 @@ public class FindNumbersWithEvenNumberOfDigits {
                 nums[i] /= 10;
                 counter++;
             }
-            if (counter % 2 == 0) res++;
+            if (counter % 2 == 0)
+                res++;
         }
         return res;
     }

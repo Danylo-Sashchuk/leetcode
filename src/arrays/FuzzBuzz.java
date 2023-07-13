@@ -15,9 +15,12 @@ public class FuzzBuzz {
         StringBuilder builder;
         for (int i = 1; i <= n; i++) {
             builder = new StringBuilder();
-            if (i % 3 == 0) builder.append("Fizz");
-            if (i % 5 == 0) builder.append("Buzz");
-            if (builder.isEmpty()) builder.append(i);
+            if (i % 3 == 0)
+                builder.append("Fizz");
+            if (i % 5 == 0)
+                builder.append("Buzz");
+            if (builder.isEmpty())
+                builder.append(i);
             res.add(builder.toString());
         }
         return res;
