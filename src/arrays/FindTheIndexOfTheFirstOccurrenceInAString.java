@@ -18,7 +18,8 @@ public class FindTheIndexOfTheFirstOccurrenceInAString {
                     break;
                 }
             }
-            if (isValid) return left;
+            if (isValid)
+                return left;
             isValid = true;
             left++;
         }

@@ -7,7 +7,8 @@ public class GroupAnagrams {
         Map<Integer, List<String>> map = new HashMap<>();
         for (String s : strs) {
             int[] alphabet = new int[26];
-            for (char c : s.toCharArray()) alphabet[c - 'a']++;
+            for (char c : s.toCharArray())
+                alphabet[c - 'a']++;
             int key = Arrays.hashCode(alphabet);
             if (!map.containsKey(key)) {
                 map.put(key, new ArrayList<>());

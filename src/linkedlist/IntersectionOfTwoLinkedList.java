@@ -37,7 +37,8 @@ public class IntersectionOfTwoLinkedList {
         }
 
         while (firstHead != null && secondHead != null && firstHead.next != null && secondHead.next != null) {
-            if (firstHead == secondHead) return firstHead;
+            if (firstHead == secondHead)
+                return firstHead;
             firstHead = firstHead.next;
             secondHead = secondHead.next;
         }

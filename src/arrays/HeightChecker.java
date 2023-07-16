@@ -12,7 +12,8 @@ public class HeightChecker {
         Arrays.sort(sorted);
         int res = 0;
         for (int i = 0; i < heights.length; i++)
-            if (heights[i] != sorted[i]) res++;
+            if (heights[i] != sorted[i])
+                res++;
         return res;
     }
 }

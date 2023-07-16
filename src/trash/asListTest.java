@@ -18,6 +18,6 @@ public class asListTest {
         System.out.println(Arrays.toString(strings));
 
         int[] a = {1, 2, 3};
-        List<Integer> l = Arrays.asList(a);
+        List<int[]> l = Arrays.asList(a);
     }
 }
