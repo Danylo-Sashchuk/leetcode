@@ -38,7 +38,8 @@ public class LongestRepeatingCharacterReplacement {
 
             if (tempK == -1) {
                 map.put(s.charAt(left), map.get(s.charAt(left)) - 1);
-                if (map.get(s.charAt(left)) == 0) map.remove(s.charAt(left));
+                if (map.get(s.charAt(left)) == 0)
+                    map.remove(s.charAt(left));
                 tempK++;
                 left++;
                 right++;
@@ -58,7 +59,8 @@ public class LongestRepeatingCharacterReplacement {
                 max = entry.getValue();
             }
         }
-        if (map.size() == 0) common = s.charAt(0);
+        if (map.size() == 0)
+            common = s.charAt(0);
         return common;
     }
 }

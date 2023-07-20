@@ -10,8 +10,8 @@ public class LargestNumberAtLeastTwiceofOthers {
         nums = new int[]{1, 2, 3, 4};
         nums = new int[]{0, 0, 0, 2};
         nums = new int[]{1, 0};
-//        nums = new int[]{0, 0, 3, 2};
-//        nums = new int[]{1, 2, 16, 35, 44, 100, 27, 0};
+        //        nums = new int[]{0, 0, 3, 2};
+        //        nums = new int[]{1, 2, 16, 35, 44, 100, 27, 0};
         nums = new int[]{3, 6, 1, 0};
         System.out.println(dominantIndex(nums));
     }
@@ -29,8 +29,10 @@ public class LargestNumberAtLeastTwiceofOthers {
                 second = nums[i];
             }
         }
-        if (second == 0 && max != 0) return index;
-        if (second + second <= max) return index;
+        if (second == 0 && max != 0)
+            return index;
+        if (second + second <= max)
+            return index;
         return -1;
     }
 
@@ -38,11 +40,13 @@ public class LargestNumberAtLeastTwiceofOthers {
         Queue<Integer> queue = new PriorityQueue<>(Comparator.comparing(i -> nums[i]));
         for (int i = 0; i < nums.length; i++) {
             queue.add(i);
-            if (queue.size() == 3) queue.poll();
+            if (queue.size() == 3)
+                queue.poll();
         }
         int second = queue.poll();
         int first = queue.poll();
-        if (nums[second] + nums[second] <= nums[first]) return first;
+        if (nums[second] + nums[second] <= nums[first])
+            return first;
         return -1;
     }
 

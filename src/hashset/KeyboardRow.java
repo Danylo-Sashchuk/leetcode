@@ -7,8 +7,8 @@ import java.util.List;
 
 public class KeyboardRow {
     public static void main(String[] args) {
-        String[] s = {"Hello","Alaska","Dad","Peace"};
-        s = new String[]{"a","b"};
+        String[] s = {"Hello", "Alaska", "Dad", "Peace"};
+        s = new String[]{"a", "b"};
         System.out.println(Arrays.toString(findWords1(s)));
     }
 
@@ -30,15 +30,18 @@ public class KeyboardRow {
             boolean inThird = false;
             for (int j = 0; j < words[i].length(); j++) {
                 if (first.contains(Character.toLowerCase(words[i].charAt(j)))) {
-                    if (inSecond || inThird) continue main;
+                    if (inSecond || inThird)
+                        continue main;
                     inFirst = true;
                 }
-                if(second.contains(Character.toLowerCase(words[i].charAt(j)))) {
-                    if (inFirst || inThird) continue main;
+                if (second.contains(Character.toLowerCase(words[i].charAt(j)))) {
+                    if (inFirst || inThird)
+                        continue main;
                     inSecond = true;
                 }
-                if(third.contains(Character.toLowerCase(words[i].charAt(j)))) {
-                    if (inFirst || inSecond) continue main;
+                if (third.contains(Character.toLowerCase(words[i].charAt(j)))) {
+                    if (inFirst || inSecond)
+                        continue main;
                     inThird = true;
                 }
             }

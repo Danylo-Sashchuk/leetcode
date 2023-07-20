@@ -3,17 +3,20 @@ package doublepointers;
 public class LongestPalindrome {
     public static void main(String[] args) {
         String s = "babad";
-//        s = "cbbd";
-//        s = "a";
-//        s = "bb";
-//        s = "abb";
+        //        s = "cbbd";
+        //        s = "a";
+        //        s = "bb";
+        //        s = "abb";
         System.out.println(longestPalindrome1(s));
     }
 
     public static String longestPalindrome(String s) {
-        if (s == null) return null;
-        if (s.length() == 0) return "";
-        if (s.length() == 1) return s;
+        if (s == null)
+            return null;
+        if (s.length() == 0)
+            return "";
+        if (s.length() == 1)
+            return s;
         StringBuilder res = new StringBuilder();
         int left = 0;
         int right = s.length();
@@ -25,7 +28,8 @@ public class LongestPalindrome {
                 }
                 left++;
                 right = s.length();
-            } else right--;
+            } else
+                right--;
         }
         return res.toString();
     }
