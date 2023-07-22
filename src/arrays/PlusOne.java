@@ -19,6 +19,7 @@ public class PlusOne {
             System.arraycopy(digits, 0, res, 1, digits.length);
             res[0] = 1;
             return res;
-        } else return digits;
+        } else
+            return digits;
     }
 }

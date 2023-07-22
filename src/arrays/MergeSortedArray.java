@@ -2,16 +2,17 @@ package arrays;
 
 public class MergeSortedArray {
     public static void main(String[] args) {
-        print(merge(new int [] {1,2,3,0,0,0}, 3, new int [] {2,5,6}, 3));
-        print(merge(new int [] {1}, 1, new int [] {}, 0));
-        print(merge(new int [] {0}, 0, new int [] {1}, 1));
+        print(merge(new int[]{1, 2, 3, 0, 0, 0}, 3, new int[]{2, 5, 6}, 3));
+        print(merge(new int[]{1}, 1, new int[]{}, 0));
+        print(merge(new int[]{0}, 0, new int[]{1}, 1));
     }
 
     public static void print(int[] array) {
         for (int num : array) {
             System.out.print(num + " ");
         }
-        System.out.println();;
+        System.out.println();
+        ;
     }
 
     public static int[] merge(int[] nums1, int m, int[] nums2, int n) {

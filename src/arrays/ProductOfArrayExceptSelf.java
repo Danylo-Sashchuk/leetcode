@@ -16,7 +16,7 @@ public class ProductOfArrayExceptSelf {
             product *= nums[i];
         }
         product = 1;
-        for (int i = nums.length - 1; i >= 0; i--){
+        for (int i = nums.length - 1; i >= 0; i--) {
             answer[i] *= product;
             product *= nums[i];
         }
