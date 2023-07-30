@@ -12,7 +12,7 @@ public class ReverseNumber {
         int save = 0;
         while (temp != 0) {
             rev = rev * 10 + temp % 10;
-            if((rev - temp % 10) / 10 != save){
+            if ((rev - temp % 10) / 10 != save) {
                 return 0;
             }
             save = rev;

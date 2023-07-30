@@ -14,11 +14,14 @@ public class ReverseWordsInAString {
 
         //find word
         for (int i = 0; i < chars.length; i++) {
-            while (i < chars.length && chars[i] == ' ') i++; //skip spaces
+            while (i < chars.length && chars[i] == ' ')
+                i++; //skip spaces
             int wordStart = i;
-            while (i < chars.length && chars[i] != ' ') i++; //find word and
+            while (i < chars.length && chars[i] != ' ')
+                i++; //find word and
             int wordEnd = --i;
-            while (wordStart < wordEnd) reverse(chars, wordStart++, wordEnd--);
+            while (wordStart < wordEnd)
+                reverse(chars, wordStart++, wordEnd--);
         }
         return String.valueOf(chars).trim();
     }
