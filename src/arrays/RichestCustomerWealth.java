@@ -2,7 +2,6 @@ package arrays;
 
 import java.util.Arrays;
 import java.util.Comparator;
-import java.util.stream.IntStream;
 
 public class RichestCustomerWealth {
     public static void main(String[] args) {
@@ -23,6 +22,9 @@ public class RichestCustomerWealth {
     }
 
     public static int maximumWealth(int[][] accounts) {
-        return Arrays.stream(accounts).map(account -> Arrays.stream(account).sum()).max(Comparator.naturalOrder()).get();
+        return Arrays.stream(accounts)
+                .map(account -> Arrays.stream(account).sum())
+                .max(Comparator.naturalOrder())
+                .get();
     }
 }
