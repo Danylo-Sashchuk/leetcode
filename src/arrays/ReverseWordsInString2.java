@@ -14,7 +14,8 @@ public class ReverseWordsInString2 {
         int left = 0;
         while (left < input.length) {
             left = findEndWord(left, input, c -> c == ' ');
-            if (left == input.length - 1) return String.valueOf(input);
+            if (left == input.length - 1)
+                return String.valueOf(input);
             right = findEndWord(left, input, c -> c != ' ');
             right--;
             reverseWord(left, right, input);
