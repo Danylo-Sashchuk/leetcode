@@ -22,7 +22,8 @@ public class ThirdMaximumNumber {
                 third = nums[i];
             }
         }
-        if (third == Long.MIN_VALUE) return (int) first;
+        if (third == Long.MIN_VALUE)
+            return (int) first;
         return (int) third;
     }
 }
