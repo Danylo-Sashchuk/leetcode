@@ -34,12 +34,14 @@ public class TrappingRainWater {
         int residue = Integer.MAX_VALUE;
         int res = 0;
         while (right < nums.length) {
-            if (nums[right] > nums[left]) return right;
+            if (nums[right] > nums[left])
+                return right;
             int temp = Math.abs(nums[right] - nums[left]);
             if (temp <= residue) {
                 res = right;
                 residue = temp;
-                if (temp == 0) return res;
+                if (temp == 0)
+                    return res;
             }
             right++;
         }
